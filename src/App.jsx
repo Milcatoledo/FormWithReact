@@ -1,4 +1,6 @@
 import ContentForm from './components/contentForm'
+import ButtonSocialForm from './components/buttonSocialForm'
+import googleIcon from './svg/google.svg'  // Importación corregida
 
 function App() {
     return (
@@ -10,9 +12,13 @@ function App() {
         <p className="subtitle">Únete a nuestra comunidad</p>
         <ContentForm />
         <div className="divider">
-            <span>o continúa con</span>
+          <span>o continúa con</span>
+        </div>
+        <div>
+          <ButtonSocialForm imagePath={googleIcon} buttonName="Google" />
         </div>
       </div>
     )
 }
+
 export default App
