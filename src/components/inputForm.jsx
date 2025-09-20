@@ -1,5 +1,6 @@
 import usePasswordToggle from '../hooks/passwordToggle';
 import useStrongPassword from '../hooks/strongPassword';
+import '../styles/inputForm.css'
 
 function InputForm({ fieldName, typeInput, iconName, iconExtra, showStrength = false }) {
     const { isAnimating, togglePassword, getInputType, getIcon } = usePasswordToggle();

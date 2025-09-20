@@ -1,6 +1,7 @@
 import ContentForm from './components/contentForm'
 import ButtonSocialForm from './components/buttonSocialForm'
 import googleIcon from './svg/google.svg'
+import './App.css'
 
 function App() {
     return (

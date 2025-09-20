@@ -1,4 +1,5 @@
 import useSocialButton from '../hooks/socialLogin.js';
+import '../styles/buttonSocialForm.css'
 
 function ButtonSocialForm({ buttonName, imagePath }) {
     const { isLoading, handleSocialLogin } = useSocialButton();

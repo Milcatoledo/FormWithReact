@@ -1,5 +1,6 @@
 import InputForm from './inputForm'
 import ButtonForm from './buttonForm'
+import '../styles/contentForm.css'
 function ContentForm() {
     return (
         <form>
