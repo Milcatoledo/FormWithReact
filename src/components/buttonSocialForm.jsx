@@ -1,14 +1,28 @@
 import useSocialButton from '../hooks/socialLogin.js';
-function ButtonSocialForm({ buttonName, imagePath }) {
-    const { isLoading, handleSocialLogin} = useSocialButton();
 
+
+function ButtonSocialForm({ buttonName, imagePath }) {
+    const { isLoading, handleSocialLogin } = useSocialButton();
+    
     const handleClick = () => {
-        if (!isLoading) { handleSocialLogin(buttonName)}
+        if (!isLoading) { 
+            handleSocialLogin(buttonName);
+        }
     };
 
     return (
-        <button className="social-btn" onClick={handleClick} disabled={isLoading} >
-            <img src={imagePath} alt={`${buttonName} icon`} width="20" height="20"/>
+        <button 
+            className="btn btn-outline-secondary btn-lg w-100 d-flex align-items-center justify-content-center social-btn-hover"
+            onClick={handleClick} 
+            disabled={isLoading}
+        >
+            <img 
+                src={imagePath} 
+                alt={`${buttonName} icon`} 
+                width="20" 
+                height="20"
+                className="me-2"
+            />
             {isLoading ? `Conectando con ${buttonName}...` : buttonName}
         </button>
     )

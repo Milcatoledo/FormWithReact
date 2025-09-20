@@ -1,6 +1,8 @@
-function ButtonForm({buttonName, typeButton}){
+function ButtonForm({ buttonName }) {
     return (
-        <button type={typeButton}>{buttonName}</button>
+        <button type="submit" className="btn btn-primary btn-lg fw-bold w-100">
+            {buttonName}
+        </button>
     )
 }
 

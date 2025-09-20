@@ -23,7 +23,7 @@ function ContentForm() {
                 />
             </>
 
-            <ButtonForm buttonName="Crear cuenta" />
+            <ButtonForm buttonName="Crear cuenta"/>
             <p>Al registrarte, aceptas nuestros 
                 <a href="#"> Términos de Servicio</a> y 
                 <a href="#"> Política de Privacidad</a></p>
