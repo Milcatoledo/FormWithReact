@@ -31,4 +31,4 @@ function InputForm({ fieldName, typeInput, iconName, iconExtra }) {
     );
 }
 
-export default InputForm;
+export default InputForm

@@ -9,6 +9,9 @@ function App() {
         <h1>Crear cuenta</h1>
         <p className="subtitle">Únete a nuestra comunidad</p>
         <ContentForm />
+        <div className="divider">
+            <span>o continúa con</span>
+        </div>
       </div>
     )
 }

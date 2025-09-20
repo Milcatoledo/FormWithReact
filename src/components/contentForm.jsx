@@ -1,5 +1,5 @@
 import InputForm from './inputForm'
-
+import ButtonForm from './buttonForm'
 function ContentForm() {
     return (
         <form>
@@ -21,7 +21,11 @@ function ContentForm() {
                 iconExtra="visibility_off"
                 />
             </>
-            <p>Al registrarte, aceptas nuestros Términos de Servicio y Política de Privacidad</p>
+            
+            <ButtonForm typeButton="submit" buttonName="Crear cuenta" />
+            <p>Al registrarte, aceptas nuestros 
+                <a href="#"> Términos de Servicio</a> y 
+                <a href="#"> Política de Privacidad</a></p>
         </form>
     )
 }
