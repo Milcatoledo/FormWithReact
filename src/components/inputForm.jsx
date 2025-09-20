@@ -11,14 +11,7 @@ function InputForm({ fieldName, typeInput, iconName, iconExtra, showStrength = f
         : iconExtra;
     
     const strengthHook = useStrongPassword();
-    const {
-        passwordValue,
-        isActive,
-        strength,
-        handlePasswordChange,
-        getStrengthStyle,
-        getStrengthClass
-    } = showStrength ? strengthHook : {};
+    const {passwordValue, isActive, strength, handlePasswordChange, getStrengthStyle, getStrengthClass } = showStrength ? strengthHook : {};
 
     const handleInputChange = (e) => {
         if (showStrength && typeInput === 'password' && handlePasswordChange) {
@@ -31,15 +24,13 @@ function InputForm({ fieldName, typeInput, iconName, iconExtra, showStrength = f
             <div>
                 <i className="material-icons input-icon">{iconName}</i>
                 <label htmlFor="">{fieldName}</label>
-                <input
-                    type={inputType}
+                <input type={inputType} 
                     value={showStrength && typeInput === 'password' ? passwordValue : undefined}
-                    onChange={handleInputChange}
-                    required
+                    onChange={handleInputChange} required
                 />
+
                 {iconExtra && (
-                    <i
-                        className="material-icons input-icon"
+                    <i className="material-icons input-icon"
                         onClick={typeInput === 'password' ? togglePassword : undefined}
                         style={{
                             transform: isAnimating ? 'scale(0.8)' : 'scale(1)',
@@ -55,8 +46,7 @@ function InputForm({ fieldName, typeInput, iconName, iconExtra, showStrength = f
             {showStrength && typeInput === 'password' && (
                 <div className={`password-strength ${isActive ? 'active' : ''}`}>
                     <div className="strength-bar">
-                        <div
-                            className={`strength-fill ${getStrengthClass && getStrengthClass()}`}
+                        <div className={`strength-fill ${getStrengthClass && getStrengthClass()}`}
                             style={getStrengthStyle && getStrengthStyle()}
                         ></div>
                     </div>
