@@ -2,7 +2,7 @@ import ContentForm from './components/contentForm'
 import ButtonSocialForm from './components/buttonSocialForm'
 import googleIcon from './svg/google.svg' 
 import './styles/buttonSocialForm.css'
-
+import './styles/inputForm.css'
 function App() {
     return (
       <div className='containerCardForm'>

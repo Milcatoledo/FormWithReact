@@ -1,18 +1,15 @@
 import usePasswordToggle from '../hooks/passwordToggle';
 import useStrongPassword from '../hooks/strongPassword';
-import '../styles/strongPassword.css'
 
 function InputForm({ fieldName, typeInput, iconName, iconExtra, showStrength = false }) {
     const { isAnimating, togglePassword, getInputType, getIcon } = usePasswordToggle();
     const inputType = getInputType(typeInput);
-    
     const displayIcon = typeInput === 'password'
         ? getIcon()
         : iconExtra;
-    
     const strengthHook = useStrongPassword();
-    const {passwordValue, isActive, strength, handlePasswordChange, getStrengthStyle, getStrengthClass } = showStrength ? strengthHook : {};
-
+    const { passwordValue, isActive, strength, handlePasswordChange, getStrengthStyle, getStrengthClass } = showStrength ? strengthHook : {};
+    
     const handleInputChange = (e) => {
         if (showStrength && typeInput === 'password' && handlePasswordChange) {
             handlePasswordChange(e.target.value);
@@ -20,37 +17,43 @@ function InputForm({ fieldName, typeInput, iconName, iconExtra, showStrength = f
     };
 
     return (
-        <div>
-            <div>
-                <i className="material-icons input-icon">{iconName}</i>
-                <label htmlFor="">{fieldName}</label>
-                <input type={inputType} 
+        <div className="mb-3">
+            <label className="form-label text-muted small">{fieldName}</label>
+            <div className="input-group">
+                <span className="input-group-text bg-transparent border-end-0">
+                    <i className="material-icons text-muted">{iconName}</i>
+                </span>
+                <input 
+                    type={inputType}
+                    className="form-control border-start-0 ps-0"
                     value={showStrength && typeInput === 'password' ? passwordValue : undefined}
-                    onChange={handleInputChange} required
+                    onChange={handleInputChange}
+                    required
                 />
-
                 {iconExtra && (
-                    <i className="material-icons input-icon"
-                        onClick={typeInput === 'password' ? togglePassword : undefined}
-                        style={{
-                            transform: isAnimating ? 'scale(0.8)' : 'scale(1)',
-                            transition: 'transform 0.15s ease',
-                            cursor: typeInput === 'password' ? 'pointer' : 'default'
-                        }}
-                    >
-                        {displayIcon}
-                    </i>
+                    <span className={`input-group-text bg-transparent border-start-0 password-toggle ${isAnimating ? 'animating' : ''}`}>
+                        <i 
+                            className="material-icons text-muted"
+                            onClick={typeInput === 'password' ? togglePassword : undefined}
+                        >
+                            {displayIcon}
+                        </i>
+                    </span>
                 )}
             </div>
+            
             {/* Indicador de fuerza de contraseña */}
-            {showStrength && typeInput === 'password' && (
-                <div className={`password-strength ${isActive ? 'active' : ''}`}>
-                    <div className="strength-bar">
-                        <div className={`strength-fill ${getStrengthClass && getStrengthClass()}`}
+            {showStrength && typeInput === 'password' && isActive && (
+                <div className="password-strength mt-2">
+                    <div className="progress strength-bar">
+                        <div 
+                            className={`progress-bar strength-fill ${getStrengthClass && getStrengthClass()}`}
                             style={getStrengthStyle && getStrengthStyle()}
                         ></div>
                     </div>
-                    <span className="strength-text">{strength && strength.feedback}</span>
+                    <small className="strength-text d-block mt-1">
+                        {strength && strength.feedback}
+                    </small>
                 </div>
             )}
         </div>

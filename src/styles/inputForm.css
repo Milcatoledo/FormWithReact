@@ -1,0 +1,8 @@
+.password-toggle {
+    cursor: pointer;
+    transition: transform 0.15s ease;
+}
+
+.password-toggle.animating {
+    transform: scale(0.8);
+}
