@@ -1,10 +1,10 @@
 import ContentForm from './components/contentForm'
 import ButtonSocialForm from './components/buttonSocialForm'
-import googleIcon from './svg/google.svg'  // Importación corregida
+import googleIcon from './svg/google.svg' 
 
 function App() {
     return (
-      <div>
+      <div className='containerCardForm'>
         <div>
           <i className="material-icons">person_add</i>
         </div>
