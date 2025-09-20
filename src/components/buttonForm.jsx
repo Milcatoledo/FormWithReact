@@ -1,6 +1,7 @@
+import '../styles/buttonForm.css'
 function ButtonForm({ buttonName }) {
     return (
-        <button type="submit" className="btn btn-primary btn-lg fw-bold w-100">
+        <button type="submit" className="btn btn-primary btn-lg fw-bold custom-btn-width">
             {buttonName}
         </button>
     )

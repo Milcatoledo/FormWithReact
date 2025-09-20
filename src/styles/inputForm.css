@@ -1,8 +1,92 @@
+.input-group-text {
+    background-color: transparent !important;
+    border-color: #dee2e6 !important;
+    padding: 12px 16px;
+}
+
+.form-control {
+    border-color: #dee2e6 !important;
+    box-shadow: none !important;
+    padding: 12px 16px;
+    font-size: 14px;
+}
+
+.form-control:focus {
+    border-color: #4285f4 !important;
+    box-shadow: 0 0 0 0.2rem rgba(66, 133, 244, 0.1) !important;
+}
+
+.form-label {
+    color: #6c757d !important;
+    font-size: 12px !important;
+    margin-bottom: 6px !important;
+    font-weight: 500 !important;
+}
+
 .password-toggle {
-    cursor: pointer;
+    cursor: pointer !important;
     transition: transform 0.15s ease;
 }
 
 .password-toggle.animating {
     transform: scale(0.8);
+}
+
+.password-toggle:hover .material-icons {
+    color: #4285f4 !important;
+}
+
+.password-strength {
+    margin-top: 8px;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.strength-bar {
+    height: 4px !important;
+    background-color: #e9ecef !important;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.strength-fill {
+    height: 100%;
+    transition: width 0.3s ease, background-color 0.3s ease;
+    border-radius: 2px;
+}
+
+.strength-fill.weak {
+    background-color: #dc3545 !important;
+}
+
+.strength-fill.medium {
+    background-color: #ffc107 !important;
+}
+
+.strength-fill.strong {
+    background-color: #28a745 !important;
+}
+
+.strength-text {
+    font-size: 12px !important;
+    margin-top: 6px !important;
+    font-weight: 500;
+}
+
+.text-weak {
+    color: #dc3545 !important;
+}
+
+.text-medium {
+    color: #ffc107 !important;
+}
+
+.text-strong {
+    color: #28a745 !important;
+}
+
+.material-icons {
+    font-feature-settings: 'liga';
+    color: #6c757d;
+    transition: color 0.2s ease;
 }

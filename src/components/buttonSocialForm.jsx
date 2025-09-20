@@ -1,6 +1,5 @@
 import useSocialButton from '../hooks/socialLogin.js';
 
-
 function ButtonSocialForm({ buttonName, imagePath }) {
     const { isLoading, handleSocialLogin } = useSocialButton();
     
@@ -12,7 +11,7 @@ function ButtonSocialForm({ buttonName, imagePath }) {
 
     return (
         <button 
-            className="btn btn-outline-secondary btn-lg w-100 d-flex align-items-center justify-content-center social-btn-hover"
+            className="btn btn-outline-secondary btn-lg d-flex align-items-center justify-content-center social-btn-hover custom-btn-width"
             onClick={handleClick} 
             disabled={isLoading}
         >
