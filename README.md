@@ -28,7 +28,7 @@ Pasos
 
 1. Clona el repositorio
 
-        En tu consola escribe "git clone "
+        En tu consola escribe "git clone https://github.com/Milcatoledo/FormWithReact.git"
         Luego "cd react_form"
 
 2. Instala las dependencias
@@ -68,7 +68,7 @@ Steps
 
 1. Clone the repository
 
-        In your console, type “git clone ”
+        In your console, type “git clone https://github.com/Milcatoledo/FormWithReact.git”
         Then “cd react_form”
 
 2. Install dependencies
