@@ -19,9 +19,10 @@ function ContentForm() {
                 fieldName="Contraseña" 
                 typeInput="password" 
                 iconExtra="visibility_off"
+                showStrength={true}
                 />
             </>
-            
+
             <ButtonForm typeButton="submit" buttonName="Crear cuenta" />
             <p>Al registrarte, aceptas nuestros 
                 <a href="#"> Términos de Servicio</a> y 
