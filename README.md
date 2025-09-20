@@ -1,13 +1,37 @@
-# React + Vite
+FormWithReact 📄
+Este es un formulario básico creado con React y CSS. Su propósito es demostrar el uso de componentes controlados, manejo de estado y validación simple.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+✨ Características
 
-Currently, two official plugins are available:
+    Manejo de estado: El formulario gestiona los datos de los campos en tiempo real.
+    Validación básica: Muestra un mensaje de error si los campos no se completan.
+    Animación CSS: Fondo animado con un degradado dinámico.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🛠️ Tecnologías Usadas
 
-## Expanding the ESLint configuration
+    React: Biblioteca de JavaScript para construir interfaces de usuario.
+    Vite: Herramienta de construcción para desarrollo web.
+    HTML5, CSS3, Bootstrap: Para la estructura y los estilos.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# FormWithReact
+🎨 ¡Gracias!
+
+Siéntete libre de usar este código, modificarlo o usarlo como base para tus propios proyectos. ¡Cualquier sugerencia es bienvenida!
+
+EN
+This is a basic form created with React and CSS. Its purpose is to demonstrate the use of controlled components, state management, and simple validation.
+
+✨ Features
+
+    State management: The form manages field data in real time.
+    Basic validation: Displays an error message if fields are not completed.
+    CSS animation: Animated background with a dynamic gradient.
+
+🛠️ Technologies Used
+
+    React: JavaScript library for building user interfaces.
+    Vite: Build tool for web development.
+    HTML5, CSS3, Bootstrap: For structure and styles.
+
+🎨 Thank you!
+
+Feel free to use this code, modify it, or use it as a basis for your own projects. Any suggestions are welcome!
