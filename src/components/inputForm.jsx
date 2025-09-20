@@ -35,6 +35,7 @@ function InputForm({ fieldName, typeInput, iconName, iconExtra, showStrength = f
                     type={inputType}
                     value={showStrength && typeInput === 'password' ? passwordValue : undefined}
                     onChange={handleInputChange}
+                    required
                 />
                 {iconExtra && (
                     <i
