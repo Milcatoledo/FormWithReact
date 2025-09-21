@@ -9,6 +9,10 @@ a:hover {
     text-decoration: underline !important;
 }
 
+p{
+    font-size: small;
+}
+
 .text-center.text-muted.small {
     line-height: 1.4;
 }

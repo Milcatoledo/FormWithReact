@@ -19,11 +19,6 @@ Prerequisitos
     Node.js 
     npm 
 
-Prerrequisitos
-
-    Node.js (versión 14 o superior)
-    npm
-
 Pasos
 
 1. Clona el repositorio
