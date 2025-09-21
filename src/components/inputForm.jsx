@@ -13,7 +13,7 @@ function InputForm({ fieldName, typeInput, iconName, iconExtra, showStrength = f
         if (showStrength && typeInput === 'password' && handlePasswordChange) {
         handlePasswordChange(e.target.value);
         if (onStrengthChange) {
-            onStrengthChange(strength?.score >= 3); // Considera fuerte si score >= 3
+            onStrengthChange(strength?.score >= 3); 
         }
         }
         if (onChange) {

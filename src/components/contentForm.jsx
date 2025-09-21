@@ -35,7 +35,6 @@ function ContentForm() {
         }
 
         showToast('Formulario enviado con éxito', 'success');
-        // Lógica para enviar formulario
     };
 
     return (
